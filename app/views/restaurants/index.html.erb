@@ -1,0 +1,11 @@
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1">Restaurants</span>
+  <p><%= link_to 'Make new Restaurant', new_restaurant_path %></p>
+</nav>
+<div class="container">
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= link_to restaurant.name, restaurant%> </li>
+    <% end %>
+  </ul>
+</div>
